@@ -10,7 +10,7 @@
 <?php
   
 
-$link =mysql_connect('localhost','root','kmadminks')
+$link =mysql_connect('localhost','KS02','Kmadminks02')
  or die('No se pudo conectar: ' . mysql_error());
 echo 'Connected successfully';
 mysql_select_db('sian') or die('No se pudo seleccionar la base de datos');
