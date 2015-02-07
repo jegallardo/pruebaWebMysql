@@ -10,10 +10,10 @@
 <?php
   
 
-$link =mysqli_connect('localhost','KS02','Kmadminks02')
- or die('No se pudo conectar: ' . mysql_error());
+$link =mysqli_connect('localhost','KS02','Kmadminks02','sian')
+ or die('No se pudo conectar: ' );
 echo 'Connected successfully';
-mysqli_select_db('sian') or die('No se pudo seleccionar la base de datos');
+mysqli_select_db($link ,'sian') or die('No se pudo seleccionar la base de datos');
 
 
 // Realizar una consulta MySQL
@@ -37,10 +37,10 @@ while ($line=mysqli_fetch_array($result)){  ?>
       <?php
 }
  //liberar resultados
-    mysqli_free_result ($result);
+    mysql_free_result ($result);
 
     //cerrar la conexion
-    mysqli_close($link);
+    mysql_close($link);
         ?>
         </table>
 
