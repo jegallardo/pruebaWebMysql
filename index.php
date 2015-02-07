@@ -37,10 +37,10 @@ while ($line=mysqli_fetch_array($result)){  ?>
       <?php
 }
  //liberar resultados
-    mysql_free_result ($result);
+    //mysql_free_result ($result);
 
     //cerrar la conexion
-    mysql_close($link);
+    //mysql_close($link);
         ?>
         </table>
 
