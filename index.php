@@ -10,9 +10,9 @@
 <?php
   
 
-$link =new mysqli_connect('127.0.0.1','KS02','Kmadminks02','sian')
- or die('No se pudo conectar: ' . mysql_error() );
-echo 'Connected successfully';
+//$link =new mysqli_connect('127.0.0.1','KS02','Kmadminks02','sian')
+// or die('No se pudo conectar: ' . mysql_error() );
+echo 'Prueba de Php';
 
 //mysql_select_db('sian',$link) or die('No se pudo seleccionar la base de datos');
 
