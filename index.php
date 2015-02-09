@@ -11,10 +11,10 @@
   
 
 $link = mysqli_connect('localhost','KS02','Kmadminks02','sian')
- or die('No se pudo conectar: ' . mysql_error() );
+ or die('No se pudo conectar: ' . mysqli_error() );
 echo 'Prueba de Php';
 
-//mysql_select_db('sian',$link) or die('No se pudo seleccionar la base de datos');
+mysql_select_db($link,'sian') or die('No se pudo seleccionar la base de datos' . mysqli_error());
 
 
 // Realizar una consulta MySQL
