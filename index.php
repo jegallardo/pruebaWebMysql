@@ -10,7 +10,7 @@
 <?php
   
 
-$link = mysqli_connect('192.168.1.2','KS02','Kmadminks02','sian')
+$link = mysqli_connect('127.0.0.1','KS02','Kmadminks02','sian')
  or die('No se pudo conectar: ' . mysql_error() );
 echo 'Prueba de Php';
 
