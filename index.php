@@ -14,12 +14,12 @@ $link = mysqli_connect('localhost','KS02','Kmadminks02','sian')
  or die('No se pudo conectar: ' . mysqli_error() );
 echo 'Prueba de Php';
 
-mysql_select_db($link,'sian') or die('No se pudo seleccionar la base de datos' . mysqli_error());
+mysqli_select_db($link,'sian') or die('No se pudo seleccionar la base de datos' . mysqli_error());
 
 
 // Realizar una consulta MySQL
 $query = 'SELECT * FROM areas';
-$result = mysqli_query($query) or die('Consulta fallida: ' . mysqli_error());
+$result = mysqli_query($link,$query) or die('Consulta fallida: ' . mysqli_error());
 
 //Imprimir los resultados en HTML
 
@@ -47,7 +47,7 @@ while ($line=mysqli_fetch_array($result)){  ?>
 
         
     
-    ?>
+    
     </body>
 
 </html>
