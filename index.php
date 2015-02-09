@@ -14,7 +14,7 @@ $link =new mysqli_connect('localhost','KS02','Kmadminks02','sian')
  or die('No se pudo conectar: ' );
 echo 'Connected successfully';
 
-mysql_select_db('sian',$link) or die('No se pudo seleccionar la base de datos');
+mysql_select_db($link,'sian') or die('No se pudo seleccionar la base de datos');
 
 
 // Realizar una consulta MySQL
