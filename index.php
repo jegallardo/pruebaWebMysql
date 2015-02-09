@@ -18,7 +18,7 @@ mysql_select_db($link,'sian') or die('No se pudo seleccionar la base de datos' .
 
 
 // Realizar una consulta MySQL
-/*$query = 'SELECT * FROM areas';
+$query = 'SELECT * FROM areas';
 $result = mysqli_query($query) or die('Consulta fallida: ' . mysqli_error());
 
 //Imprimir los resultados en HTML
@@ -46,7 +46,7 @@ while ($line=mysqli_fetch_array($result)){  ?>
         </table>
 
         
-    */
+    
     ?>
     </body>
 
