@@ -3,7 +3,11 @@
 
 <html lang="es">
    <head>
+
        <link rel="stylesheet" href="estilos.css"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!--[if lt IE 9]-->
+       <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <title>Conectar a una BD MySQL</title>
    </head>
     <body>
