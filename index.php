@@ -14,7 +14,7 @@
 <?php
   
 
-$link = mysqli_connect('192.168.1.2','KS02','Kmadminks02','sian')
+$link = mysqli_connect('localhost','KS02','Kmadminks02','sian')
  or die('No se pudo conectar: ' . mysqli_error() );
 //echo 'Prueba de Php';
 
